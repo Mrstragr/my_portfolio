@@ -1,0 +1,123 @@
+/* Base Styles */
+:root {
+    --tech-blue: #00D1FF;
+    --deep-navy: #0A192F;
+    --parchment: #F5F5DC;
+    --gold: #FFD700;
+  }
+  
+  body {
+    font-family: 'Courier New', monospace;
+    background: var(--deep-navy);
+    color: white;
+  }
+  
+  /* SAU-Inspired Header */
+  .sau-header {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid var(--gold);
+  }
+  
+  .sau-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    background: linear-gradient(to right, var(--tech-blue), var(--gold));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Portal Navigation */
+  .portal-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .portal-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .code-portal {
+    background: var(--tech-blue);
+    color: var(--deep-navy);
+  }
+  
+  .write-portal {
+    background: var(--parchment);
+    color: #333;
+  }
+  
+  .portal-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Project Grid */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+    border: 1px solid var(--tech-blue);
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--tech-blue);
+  }
+  
+  /* Bookshelf */
+  .bookshelf {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .book {
+    width: 120px;
+    height: 180px;
+    background: var(--parchment);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid var(--gold);
+  }
+  
+  .book:hover {
+    transform: rotate(5deg) scale(1.1);
+  }
+  
+  .hologram-display {
+    min-height: 200px;
+    margin: 2rem;
+    padding: 2rem;
+    background: rgba(0, 209, 255, 0.1);
+    border: 1px solid var(--tech-blue);
+    border-radius: 10px;
+  }
+  
+  /* Utility Classes */
+  .hidden {
+    display: none;
+  }
